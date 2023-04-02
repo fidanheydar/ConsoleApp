@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "BoltFoodApp.Data/1.0.0": {
+        "dependencies": {
+          "BoltFoodApp.Core": "1.0.0"
+        },
+        "runtime": {
+          "BoltFoodApp.Data.dll": {}
+        }
+      },
+      "BoltFoodApp.Core/1.0.0": {
+        "runtime": {
+          "BoltFoodApp.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BoltFoodApp.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BoltFoodApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
