@@ -147,7 +147,7 @@ namespace BoltFoodApp.Service.Services.Implementations
             Console.WriteLine("Enter Restaurant Id");
             int.TryParse(Console.ReadLine(), out int id);
             Restaurant Restaurant = await _restaurantService.GetAsync(id);
-            Console.WriteLine($"Id:{Restaurant.Id} Name: {Restaurant.Name} RestaurantCatecory: {Restaurant.RestaurantCategory}");
+            Console.WriteLine($"Id:{Restaurant.Id} Name: {Restaurant.Name} RestaurantCategory: {Restaurant.RestaurantCategory}");
         }
 
         private async Task UpdateRestaurant()
@@ -170,7 +170,7 @@ namespace BoltFoodApp.Service.Services.Implementations
         private async Task RemoveRestaurant()
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("Add Group Id");
+            Console.WriteLine("Add Id for remove");
 
             int.TryParse(Console.ReadLine(), out int id);
 
@@ -234,7 +234,7 @@ namespace BoltFoodApp.Service.Services.Implementations
             Console.ForegroundColor = ConsoleColor.Green;
             foreach (var item in products)
             {
-                Console.WriteLine($"Id:{item.Id} Name: {item.Name}  ProductCatecory: {item.ProductCategory} RestaurantName: {item.Restaurant.Name} ");
+                Console.WriteLine($"Id:{item.Id} Name: {item.Name}  ProductCategory: {item.ProductCategory} RestaurantName: {item.Restaurant.Name} ");
             }
 
         }
@@ -245,7 +245,7 @@ namespace BoltFoodApp.Service.Services.Implementations
             Console.WriteLine("Enter product Id");
             int.TryParse(Console.ReadLine(), out int id);
             Product product = await _productService.GetAsync(id);
-            Console.WriteLine($"Id:{product.Id} Name: {product.Name} ProductCatecory: {product.ProductCategory} RestoranName: {product.Restaurant.Name}"); 
+            Console.WriteLine($"Id:{product.Id} Name: {product.Name} ProductCategory: {product.ProductCategory} RestoranName: {product.Restaurant.Name}"); 
         }
 
         private async Task UpdateProduct()
